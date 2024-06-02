@@ -47,7 +47,7 @@ for(const product of products)
 const FilterResult= await page.locator("//span[@class='a-size-medium a-color-base a-text-normal']").textContent();
 expect(FilterResult).toBe("World�s Greatest Books For Personal Growth & Wealth (Set of 4 Books) : Perfect Motivational Gift Set [Paperback] Dale Carnegie; Napoleon Hill; Dr. Joseph Murphy and George S. Clason");
 
-page.waitForLoadState(5000);
+page.waitForLoadState(7000);
 
 await page.close();
 
